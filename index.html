@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
@@ -20,19 +20,20 @@
 
 <body>
     <!-- Header -->
-    <header class="text-gray-600 body-font">
-        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+    <header class="text-gray-600 bg-gray-100 body-font sticky top-0" id="home">
+        <div class="container mx-auto flex flex-wrap p-4 flex-col md:flex-row items-center">
             <a href="./" class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
                 <img src="./assets/img/logo.png" class="w-16 h-16 text-white p-2 bg-yellow-300 rounded-full">
                 <span class="ml-3 text-xl">Charge Edu-Tech</span>
             </a>
             <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
                 <a href="#home" class="mr-5 hover:text-yellow-400 cursor-pointer">Home</a>
-                <a class="mr-5 hover:text-yellow-400 cursor-pointer">About Us</a>
-                <a class="mr-5 hover:text-yellow-400 cursor-pointer">Our Services</a>
-                <a class="mr-5 hover:text-yellow-400 cursor-pointer">Contact Us</a>
+                <a href="#about" class="mr-5 hover:text-yellow-400 cursor-pointer">About Us</a>
+                <a href="#services" class="mr-5 hover:text-yellow-400 cursor-pointer">Our Offerings</a>
+                <a href="#team" class="mr-5 hover:text-yellow-400 cursor-pointer">Our Team</a>
+                <a href="#contact" class="mr-5 hover:text-yellow-400 cursor-pointer">Contact Us</a>
             </nav>
-            <a
+            <a href="#join-now"
                 class="inline-flex items-center bg-yellow-100 border-0 py-1 px-3 focus:outline-none hover:bg-yellow-400 rounded text-base mt-4 md:mt-0 cursor-pointer">Join
                 Internship
                 <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -43,7 +44,7 @@
         </div>
     </header>
     <!-- Top Hero -->
-    <section class="text-gray-600 body-font home">
+    <section class="text-gray-600 body-font" id="about">
         <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
             <div
                 class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
@@ -69,7 +70,7 @@
         </div>
     </section>
     <!-- Services Offered -->
-    <section class="text-gray-600 body-font">
+    <section class="text-gray-600 body-font" id="services">
         <div class="container px-5 py-24 mx-auto">
             <div class="flex flex-wrap w-full mb-20">
                 <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
@@ -162,7 +163,7 @@
         </div>
     </section>
     <!-- CTA -->
-    <section class="text-gray-600 body-font">
+    <section class="text-gray-600 body-font" id="join-now">
         <div class="container px-5 py-24 mx-auto flex flex-wrap items-center">
             <div class="lg:w-3/5 md:w-1/2 md:pr-16 lg:pr-0 pr-0">
                 <h1 class="title-font font-medium text-3xl text-gray-900">Join our Exclusive Community</h1>
@@ -178,12 +179,12 @@
                 <div class="relative mb-4">
                     <label for="full-name" class="leading-7 text-sm text-gray-600">Full Name</label>
                     <input type="text" id="full-name" placeholder="Full Name" name="full-name"
-                        class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                        class="w-full bg-white rounded border border-gray-300 focus:border-yellow-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
                 </div>
                 <div class="relative mb-4">
                     <label for="email" class="leading-7 text-sm text-gray-600">Email</label>
                     <input type="email" id="email" placeholder="johndoe@example.com" name="email"
-                        class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                        class="w-full bg-white rounded border border-gray-300 focus:border-yellow-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
                 </div>
                 <button
                     class="text-white bg-yellow-500 border-0 py-2 px-8 focus:outline-none hover:bg-yellow-600 rounded text-lg">Sign Up Now</button>
@@ -192,11 +193,11 @@
         </div>
     </section>
     <!-- Our Team -->
-    <section class="text-gray-600 body-font">
+    <section class="text-gray-600 body-font" id="team">
         <div class="container px-5 py-24 mx-auto">
             <div class="flex flex-col text-center w-full mb-20">
                 <h1 class="text-2xl font-medium title-font mb-4 text-gray-900 tracking-widest">Meet Our Team</h1>
-                <p class="lg:w-2/3 mx-auto leading-relaxed text-base">At Change Edu-Tech, we have a dedicated team of professionals who are passionate about what they do. With diverse
+                <p class="lg:w-2/3 mx-auto leading-relaxed text-base">At Charge Edu-Tech, we have a dedicated team of professionals who are passionate about what they do. With diverse
                 backgrounds and expertise, our team works collaboratively to provide exceptional services to our clients. Get to know
                 some of the key members of our team below:
                 </p>
@@ -211,7 +212,7 @@
                         <div class="flex-grow sm:pl-8">
                             <h2 class="title-font font-medium text-lg text-gray-900">John Smith</h2>
                             <h3 class="text-gray-500 mb-3">CEO and Founder</h3>
-                            <p class="mb-4">John is the visionary behind Change Edu-Tech. With over 15 years of experience in the industry, he has successfully
+                            <p class="mb-4">John is the visionary behind Charge Edu-Tech. With over 15 years of experience in the industry, he has successfully
                             led our company to new heights. His strategic mindset and innovative approach drive our growth and ensure that we stay
                             ahead of the competition.
                             </p>
@@ -251,7 +252,7 @@
                         <div class="flex-grow sm:pl-8">
                             <h2 class="title-font font-medium text-lg text-gray-900">Lisa Roberts</h2>
                             <h3 class="text-gray-500 mb-3">Chief Operating Officer</h3>
-                            <p class="mb-4">Lisa oversees the day-to-day operations of Change Edu-Tech. With her strong organizational skills and attention to
+                            <p class="mb-4">Lisa oversees the day-to-day operations of Charge Edu-Tech. With her strong organizational skills and attention to
                             detail, she ensures that our projects are delivered on time and meet the highest quality standards. Her strategic
                             thinking and ability to streamline processes contribute to the overall success of our company.
                             </p>
@@ -369,7 +370,7 @@
     <!-- Testimonials -->
     <section class="text-gray-600 body-font">
         <div class="container px-5 py-24 mx-auto">
-            <h1 class="text-3xl font-medium title-font text-gray-900 mb-12 text-center">Testimonials</h1>
+            <h1 class="text-3xl font-medium title-font text-gray-900 mb-12 text-center">What Our Customers Say</h1>
             <div class="flex flex-wrap -m-4">
                 <div class="p-4 md:w-1/2 w-full">
                     <div class="h-full bg-gray-100 p-8 rounded">
@@ -379,16 +380,16 @@
                                 d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z">
                             </path>
                         </svg>
-                        <p class="leading-relaxed mb-6">Synth chartreuse iPhone lomo cray raw denim brunch everyday
-                            carry
-                            neutra before they sold out fixie 90's microdosing. Tacos pinterest fanny pack venmo,
-                            post-ironic heirloom try-hard pabst authentic iceland.</p>
+                        <p class="leading-relaxed mb-6">I have been using Change Edu-Tech for a few months now, and it has been an incredible learning experience. The platform
+                        offers a wide range of courses and resources that are both comprehensive and engaging. The instructors are knowledgeable
+                        and provide valuable insights. I have seen a significant improvement in my skills and knowledge, thanks to Change
+                        Edu-Tech.</p>
                         <a class="inline-flex items-center">
                             <img alt="testimonial" src="https://dummyimage.com/106x106"
                                 class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
                             <span class="flex-grow flex flex-col pl-4">
-                                <span class="title-font font-medium text-gray-900">Holden Caulfield</span>
-                                <span class="text-gray-500 text-sm">UI DEVELOPER</span>
+                                <span class="title-font font-medium text-gray-900">Jane Doe</span>
+                                <span class="text-gray-500 text-sm">Software Engineer</span>
                             </span>
                         </a>
                     </div>
@@ -401,16 +402,18 @@
                                 d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z">
                             </path>
                         </svg>
-                        <p class="leading-relaxed mb-6">Synth chartreuse iPhone lomo cray raw denim brunch everyday
-                            carry
-                            neutra before they sold out fixie 90's microdosing. Tacos pinterest fanny pack venmo,
-                            post-ironic heirloom try-hard pabst authentic iceland.</p>
+                        <p class="leading-relaxed mb-6">Change Edu-Tech has been instrumental in advancing my career as a data analyst. The comprehensive courses and hands-on
+                        projects have allowed me to sharpen my technical skills and gain a deep understanding of data analysis techniques. The
+                        platform's emphasis on real-world applications has been invaluable in preparing me for the challenges of the industry.
+                        I'm grateful for the support of the knowledgeable instructors and the vibrant community of fellow data analysts. Thanks
+                        to Change Edu-Tech, I feel confident and well-equipped to tackle complex data problems and drive meaningful insights for
+                        my organization.</p>
                         <a class="inline-flex items-center">
                             <img alt="testimonial" src="https://dummyimage.com/107x107"
                                 class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
                             <span class="flex-grow flex flex-col pl-4">
-                                <span class="title-font font-medium text-gray-900">Alper Kamu</span>
-                                <span class="text-gray-500 text-sm">DESIGNER</span>
+                                <span class="title-font font-medium text-gray-900">Emily Rodriguez</span>
+                                <span class="text-gray-500 text-sm">Data Analyst</span>
                             </span>
                         </a>
                     </div>
@@ -419,51 +422,50 @@
         </div>
     </section>
     <!-- Contact Us -->
-    <section class="text-gray-600 body-font relative">
+    <section class="text-gray-600 body-font relative" id="contact">
         <div class="container px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap">
             <div
                 class="lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
                 <iframe width="100%" height="100%" class="absolute inset-0" frameborder="0" title="map" marginheight="0"
                     marginwidth="0" scrolling="no"
-                    src="https://maps.google.com/maps?width=100%&height=600&hl=en&q=%C4%B0zmir+(My%20Business%20Name)&ie=UTF8&t=&z=14&iwloc=B&output=embed"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3867.511833336482!2d76.3949454094202!3d14.223338086146796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bba750ae084ac5b%3A0x7fefd4da3e9d2d58!2sCHARGE%20Edu-Tech!5e0!3m2!1sen!2sin!4v1684586502398!5m2!1sen!2sin"
                     style="filter: grayscale(1) contrast(1.2) opacity(0.4);"></iframe>
                 <div class="bg-white relative flex flex-wrap py-6 rounded shadow-md">
                     <div class="lg:w-1/2 px-6">
                         <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs">ADDRESS</h2>
-                        <p class="mt-1">Photo booth tattooed prism, portland taiyaki hoodie neutra typewriter</p>
+                        <p class="mt-1">Burujanahatti Rd, near ane bagilu, Neelakanteswara Extension, Chickpet, Chitradurga, Karnataka 577501</p>
                     </div>
                     <div class="lg:w-1/2 px-6 mt-4 lg:mt-0">
                         <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs">EMAIL</h2>
-                        <a class="text-indigo-500 leading-relaxed">example@email.com</a>
+                        <a href="mailto:info@chargeedutech.com" class="text-yellow-500 leading-relaxed">info@chargeedutech.com</a>
                         <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">PHONE</h2>
-                        <p class="leading-relaxed">123-456-7890</p>
+                        <p class="leading-relaxed">+91-1234567890</p>
                     </div>
                 </div>
             </div>
             <div class="lg:w-1/3 md:w-1/2 bg-white flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
                 <h2 class="text-gray-900 text-lg mb-1 font-medium title-font">Feedback</h2>
-                <p class="leading-relaxed mb-5 text-gray-600">Post-ironic portland shabby chic echo park, banjo fashion
-                    axe
+                <p class="leading-relaxed mb-5 text-gray-600">We value your feedback! Please let us know if you have any questions, suggestions, or concerns. Fill out the form below,
+                and we'll get back to you as soon as possible.
                 </p>
                 <div class="relative mb-4">
                     <label for="name" class="leading-7 text-sm text-gray-600">Name</label>
-                    <input type="text" id="name" name="name"
-                        class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                    <input type="text" id="name" placeholder="Full Name" name="name"
+                        class="w-full bg-white rounded border border-gray-300 focus:border-yellow-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
                 </div>
                 <div class="relative mb-4">
                     <label for="email" class="leading-7 text-sm text-gray-600">Email</label>
-                    <input type="email" id="email" name="email"
-                        class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                    <input type="email" id="email" placeholder="johndoe@example.com" name="email"
+                        class="w-full bg-white rounded border border-gray-300 focus:border-yellow-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
                 </div>
                 <div class="relative mb-4">
                     <label for="message" class="leading-7 text-sm text-gray-600">Message</label>
-                    <textarea id="message" name="message"
-                        class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+                    <textarea id="message" name="message" placeholder="Your Message"
+                        class="w-full bg-white rounded border border-gray-300 focus:border-yellow-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
                 </div>
                 <button
-                    class="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
-                <p class="text-xs text-gray-500 mt-3">Chicharrones blog helvetica normcore iceland tousled brook viral
-                    artisan.</p>
+                    class="text-white bg-yellow-500 border-0 py-2 px-6 focus:outline-none hover:bg-yellow-600 rounded text-lg">Submit</button>
+                <p class="text-xs text-gray-500 mt-3">We appreciate your time and look forward to hearing from you.</p>
             </div>
         </div>
     </section>
